@@ -4,37 +4,30 @@
 }
 
 body{
-    background: #ddd;
+    background: #eee;
+    color: #333;
 }
 
 .wrapper{
     width: 100%;
     max-width: 960px;
-    margin: 0 auto;
 }
 
-.flex-container{
+#blocks{
     display: flex;
-    background: #fff;
-    flex-wrap: wrap;
-    flex-flow: row;
-    justify-content: center;
-    height: 800px;
+    margin: 10px;
+    justify-content: space-between;
 }
 
-.box{
-    height: 100px;
+#blocks div{
     flex: 0 0 100px;
+    padding: 30px 0;
+    text-align: center;
+    background: #ccc;
+    font-size: 30px;
 }
 
-.one{
-    background: red;
-}
-
-.two{
-    background: blue;
-}
-
-.three{
-    background: green;
-}
+.one{order: 2;}
+.two{order: 3;}
+.three{order: 0;}
+.four{order: 1;}
